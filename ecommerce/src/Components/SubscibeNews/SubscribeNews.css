@@ -1,0 +1,110 @@
+.news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-image: linear-gradient(180deg, rgb(251, 168, 113), rgb(255, 255, 255));
+    height: 40vh;
+    margin: 40px 120px;
+    margin-bottom: 100px;
+    padding-bottom: 40px;
+}
+
+.news h1 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.news p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.subscribe {
+    display: flex;
+    width: 690px;
+    height: 70px;
+    background-color: white;
+    border-radius: 75px;
+}
+
+.subscribe input {
+    width: 500px;
+    border: none;
+    outline: 0;
+    height: 70px;
+    font-size: 18px;
+    margin-left: 30px;
+}
+
+.subscribe button {
+    width: 190px;
+    outline: none;
+    height: 70px;
+    font-size: 18px;
+    border-radius: 75px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+@media (max-width:900px) {
+    .news {
+        margin: 100px 40px;
+    }
+    .news h1 {
+        font-size: 36px;
+    }
+
+    .news p {
+        font-size: 16px;
+    }
+
+    .subscribe {
+        width: 500px;
+    }
+
+    .subscribe input {
+        width: 400px;
+    }
+
+    ;
+
+    .subscribe button {
+        width: 150px;
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width:600px) {
+    .news {
+        margin: 100px 30px;
+    }
+    .news h1 {
+        font-size: 24px;
+        margin-bottom: -40px;
+    }
+
+    .news p {
+        font-size: 16px;
+        margin-bottom: -40px;
+    }
+
+    .subscribe {
+        width: 400px;
+        height: 50px;
+    }
+
+    .subscribe input {
+        width: 300px;
+        height: 50px;
+    }
+    .subscribe button {
+        width: 150px;
+        font-size: 14px;
+        height: 50px;
+    }
+
+}

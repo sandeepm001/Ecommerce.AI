@@ -1,0 +1,216 @@
+.product-display{
+    display: flex;
+    margin: 0 170px;
+    font-size: 14px;
+    gap: 24px;
+}
+
+.product-display-left{
+    display: flex;
+    width: fit-content;
+    gap:10px;
+}
+.product-display-img-list{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.product-display-img-list img{
+    height: 110px;
+    width: 86px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.product-display-main-img img{
+    height: 470px;
+    width: 360px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* rightside */
+
+.product-display-right{
+    margin-right:50px;
+    margin-left:70px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.product-kicker {
+    color: #a43f21;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.product-display-right h1{
+    all: unset;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.product-display-right-star{
+    display: flex;
+    margin:10px 0px;
+}
+
+.product-display-right-star div{
+    margin-left:5px;
+}
+
+.product-display-right-prices{
+    display: flex;
+    margin:10px 0px;
+    gap:20px;
+}
+
+.product-display-right-old{
+    font-size: 16px;
+    
+    color:grey;
+    text-decoration: line-through;
+}
+
+.product-display-right-new{
+    font-weight: 600;
+    font-size: 18px;
+    color:#a43f21;
+}
+
+.product-display-right-sizes{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    margin:20px 0px;
+}
+.product-display-right-sizes h1{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.product-display-right-size{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap:15px;
+    width: fit-content;
+}
+.product-display-right-size button{
+    width:35px;
+    height: 35px;
+    background-color: rgb(237, 237, 237);
+    border-radius: 5px;
+    border:1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:3px;
+    cursor: pointer;
+}
+
+.product-display-right-size button.selected{
+    border-color: #111;
+    background: #111;
+    color: #fff;
+}
+
+.product-display-right > button{
+    width:fit-content;
+    border:none;
+    background-color: #111;
+    color:white;
+    padding:15px 25px;
+    margin:10px 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.product-display-right-category span ,.product-display-right-tag span{
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+@media (max-width:1200px) {
+    .product-display{
+        margin: 0 140px;
+    }
+    
+}
+@media (max-width:1050px) {
+    .product-display{
+        margin: 0 70px;
+        gap: 16px;
+    }
+    
+}
+@media (max-width:800px) {
+    .product-display{
+        margin: 0 40px;
+    }
+    .product-display-img-list img{
+        height: 72px;
+    }
+    .product-display-main-img img{
+        height: 320px;
+    }
+    .product-display-right{
+        margin-right: 20px;
+        margin-left: 30px;
+    }
+    .product-display-right h1{
+        font-size: 20px;
+    }
+    .product-display-right-old{
+        font-size: 14px;
+    }
+    .product-display-right-new{
+        font-size: 16px;
+    }
+    .product-display-right-sizes h1{
+        font-size: 16px;
+    }
+    .product-display-right-size button{
+        width:28px;
+        height:28px;
+    }
+    
+}
+@media (max-width:600px){
+    .product-display{
+        flex-direction: column;
+    }
+    .product-display{
+        margin: 0 30px;
+    }
+    .product-display-img-list img{
+        height: 72px;
+    }
+    .product-display-main-img img{
+        height: 320px;
+    }
+    .product-display-right{
+        margin-top:30px;
+        margin-right: 20px;
+        margin-left: 0px;
+    }
+    .product-display-right h1{
+        font-size: 20px;
+    }
+    .product-display-right-old{
+        font-size: 14px;
+    }
+    .product-display-right-new{
+        font-size: 16px;
+    }
+    .product-display-right-sizes h1{
+        font-size: 16px;
+    }
+    .product-display-right-size button{
+        width:28px;
+        height:28px;
+    }
+}

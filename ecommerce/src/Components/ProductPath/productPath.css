@@ -1,0 +1,41 @@
+.product-path{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    padding-top:120px;
+    padding-bottom: 40px;
+    color: grey;
+    text-transform: capitalize;
+    gap:8px;
+    margin: 0 170px;
+}
+
+.product-path img{
+    width:10px;
+    height: 16px;;
+}
+
+@media (max-width:1200px) {
+    .product-path{
+        margin: 0 140px;
+    }
+        
+}
+@media (max-width:1200px) {
+    .product-path{
+        margin: 0 140px;
+    }
+        
+}
+@media (max-width:800px) {
+    .product-path{
+        margin: 0 40px;
+    }
+        
+}
+@media (max-width:800px) {
+    .product-path{
+        margin: 0 30px;
+    }
+        
+}

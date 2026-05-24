@@ -1,0 +1,15 @@
+node_modules/
+build/
+.env
+
+backend/node_modules/
+backend/.env
+backend/upload/
+
+ecommerce/node_modules/
+ecommerce/build/
+ecommerce/.env
+
+admin/node_modules/
+admin/build/
+admin/.env

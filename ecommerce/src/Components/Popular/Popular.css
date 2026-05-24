@@ -1,0 +1,52 @@
+.popular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 90vh;
+}
+
+.popular h1 {
+    font-size: 45px;
+    font-weight: 600;
+    text-shadow: 2px 2px 5px rgb(149, 146, 146);
+}
+
+.popular hr {
+    width: 200px;
+    height: 3px;
+    border-radius: 75px;
+}
+
+.popular-items {
+    display: flex;
+    margin-top: 50px;
+    gap: 30px;
+}
+
+@media (max-width:1050px) {
+    .popular h1 {
+        font-size: 35px;
+    }
+
+}
+@media (max-width:800px) {
+    .popular h1 {
+        font-size: 32px;
+    }
+    .popular-items{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+}
+@media (max-width:600px) {
+    .popular h1 {
+        font-size: 26px;
+    }
+    .popular-items{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}

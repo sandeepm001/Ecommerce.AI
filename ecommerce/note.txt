@@ -1,0 +1,2 @@
+background-image: linear-gradient(180deg,rgb(251, 168, 113),rgb(255, 255, 255));
+margin:40px 120px;

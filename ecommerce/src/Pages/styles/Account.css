@@ -1,0 +1,279 @@
+.account-page {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 112px 24px 72px;
+}
+
+.account-heading {
+  margin-bottom: 28px;
+}
+
+.account-heading p {
+  color: #a43f21;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.account-heading h1,
+.account-panel h2 {
+  text-shadow: none;
+}
+
+.account-heading h1 {
+  margin-top: 6px;
+  font-size: 36px;
+}
+
+.account-grid {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.account-panel {
+  border: 1px solid #e6ded6;
+  border-radius: 8px;
+  background: #fffdfb;
+  padding: 24px;
+}
+
+.orders-panel {
+  grid-column: 1 / -1;
+}
+
+.account-name {
+  margin: 12px 0 6px;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.muted {
+  color: #756d65;
+}
+
+.address-list,
+.orders-list {
+  display: grid;
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.address-item,
+.order-item {
+  border: 1px solid #eee6df;
+  border-radius: 8px;
+  padding: 14px;
+  background: #fff;
+}
+
+.address-item p,
+.order-item p {
+  margin: 5px 0;
+  color: #655e57;
+}
+
+.address-item em {
+  display: inline-flex;
+  width: fit-content;
+  margin-left: 8px;
+  border-radius: 999px;
+  background: #111;
+  color: #fff;
+  padding: 3px 8px;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 800;
+}
+
+.address-item button,
+.order-summary-row button,
+.cancel-order button {
+  border: 1px solid #111;
+  border-radius: 6px;
+  background: #fff;
+  padding: 8px 10px;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.address-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.address-form input {
+  min-width: 0;
+  border: 1px solid #d8d0c8;
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 14px;
+}
+
+.address-form .full {
+  grid-column: 1 / -1;
+}
+
+.address-form button {
+  grid-column: 1 / -1;
+  border: 0;
+  border-radius: 6px;
+  background: #111;
+  color: #fff;
+  padding: 13px;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.account-message {
+  margin-top: 12px;
+  color: #067647;
+  font-weight: 700;
+}
+
+.order-item span {
+  font-weight: 800;
+}
+
+.order-summary-row {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 16px;
+  align-items: center;
+}
+
+.order-details {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(260px, 0.8fr);
+  gap: 18px;
+  margin-top: 18px;
+  border-top: 1px solid #eee6df;
+  padding-top: 18px;
+}
+
+.order-products {
+  display: grid;
+  gap: 12px;
+}
+
+.order-product {
+  display: grid;
+  grid-template-columns: 58px 1fr auto;
+  gap: 12px;
+  align-items: center;
+}
+
+.order-product img {
+  width: 58px;
+  height: 70px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.order-breakdown {
+  border: 1px solid #eee6df;
+  border-radius: 8px;
+  padding: 14px;
+  background: #fffdfb;
+}
+
+.order-breakdown p,
+.order-breakdown strong {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+}
+
+.order-address,
+.order-timeline,
+.cancel-order,
+.cancelled-note {
+  grid-column: 1 / -1;
+}
+
+.order-address {
+  border: 1px solid #eee6df;
+  border-radius: 8px;
+  padding: 14px;
+}
+
+.order-timeline {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.timeline-step {
+  border: 1px solid #eee6df;
+  border-radius: 8px;
+  padding: 12px;
+  color: #756d65;
+}
+
+.timeline-step > span {
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #d8d0c8;
+  margin-bottom: 8px;
+}
+
+.timeline-step.completed {
+  border-color: #111;
+  color: #201d1b;
+}
+
+.timeline-step.completed > span {
+  background: #067647;
+}
+
+.timeline-step small {
+  display: block;
+  margin-top: 6px;
+  color: #756d65;
+}
+
+.cancel-order {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+}
+
+.cancel-order input {
+  min-width: 0;
+  border: 1px solid #d8d0c8;
+  border-radius: 6px;
+  padding: 12px;
+}
+
+.cancel-order button {
+  background: #b42318;
+  border-color: #b42318;
+  color: #fff;
+}
+
+.cancelled-note {
+  color: #b42318;
+  font-weight: 800;
+}
+
+@media (max-width: 800px) {
+  .account-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .order-details,
+  .order-timeline,
+  .order-summary-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .address-form {
+    grid-template-columns: 1fr;
+  }
+}
