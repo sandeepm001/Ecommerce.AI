@@ -1,3 +1,5 @@
+# Ecommerce
+<img width="1919" height="1007" alt="Screenshot 2026-07-24 145243" src="https://github.com/user-attachments/assets/a5f47807-a4b7-40c9-8d47-f98ad223253e" />
 # Ecommerce.AI Setup Guide
 
 This project contains three parts:
